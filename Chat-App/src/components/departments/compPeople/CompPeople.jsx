@@ -2,6 +2,7 @@ import React from "react";
 import PB from "../../ima/computer/pb.jpeg";
 import RPB from "../../ima/computer/rpb.jpeg";
 import HoverRating from "../rating/HoverRating";
+import "../style.css";
 
 export default function CompPeople() {
   return (
