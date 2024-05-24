@@ -1,5 +1,16 @@
-.active{
-    background-color: #000000;
+.active , .civil{
+    background-color: blue;
     color: white;
 }
+
+.active, .computer{
+    background-color: green;
+    color: white;
+}
+
+.active, .architect{
+    background-color:pink;
+    color:white;
+}
+
 
