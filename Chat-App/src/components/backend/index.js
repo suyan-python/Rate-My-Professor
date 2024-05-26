@@ -4,14 +4,19 @@ const express = require("express");
 const app = express();
 const mongoose = require('mongoose');
 const cors = require('cors');
+const UserModel = require('./user/Users')
 
 app.use(express.json());
 app.use(cors());
 
-app.get('', (req, res) =>
+app.get('/getUsers', (req, res) =>
 {
+    UserModel.find()
+        .then(users => res.json(users))
+        .catch(err => res.json(err))
     res.send('Backend is working');
 });
+
 const userRouter = require('./modules/user/router');
 const authRouter = require('./modules/authentication/router');
 

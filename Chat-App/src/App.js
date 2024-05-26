@@ -14,7 +14,10 @@ import SignUp from "./components/form/SignUp";
 import TeacherDetails from "./components/teacher/TeacherDetails";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
+
+// require("./userDetails");
 
 function App()
 {
@@ -58,7 +61,6 @@ function App()
   {
     return (
       <div className="Log flex-col justify-center text-center">
-
         <Router>
           <Routes>
             <Route exact path="/" element={<Verify />} />
