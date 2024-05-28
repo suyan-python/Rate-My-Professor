@@ -16,12 +16,24 @@ import TeacherDetails from "./components/teacher/TeacherDetails";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import AdminDetails from "./components/adminDetails/AdminDetails";
 
 // require("./userDetails");
 
 function App()
 {
   const [verify, setVerify] = useState(false);
+  // const [data, setData] = useState("");
+
+  // const getData = async () =>
+  // {
+  //   const response = await axios.get("http://localhost:8080/getUsers");
+  //   setData(response.data);
+  // }
+  // useEffect(() =>
+  // {
+  //   getData()
+  // }, [])
 
   if (verify === true)
   {
@@ -31,6 +43,7 @@ function App()
         <div className="mx-28">
           <Router>
             <Navbar />
+            {/* {data} */}
             <Routes>
               <Route path="/Home" element={<Home />} />
               <Route exact path="/faculty/Faculties" element={<Faculties />} />
@@ -50,6 +63,12 @@ function App()
                 exact
                 path="/TeacherDetails"
                 element={<TeacherDetails />}
+              />
+
+              <Route
+                exact
+                path="/AdminDetails"
+                element={<AdminDetails />}
               />
 
             </Routes>
@@ -73,8 +92,6 @@ function App()
             />} />
           </Routes>
         </Router>
-
-
       </div>
     );
   }

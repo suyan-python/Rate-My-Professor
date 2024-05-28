@@ -1,17 +1,14 @@
-.active,
-.civil {
+.active.civil {
   background-color: blue;
   color: white;
 }
 
-.active,
-.computer {
+.active.computer {
   background-color: green;
   color: white;
 }
 
-.active,
-.architect {
-  background-color: pink;
+.active.architect {
+  background-color: rgb(224, 46, 123);
   color: white;
 }

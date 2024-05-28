@@ -52,6 +52,11 @@ function Home(props) {
             Teacher Details
           </Link>
         </div>
+        <div className="db-area bg-red-500 h-80 text-center text-4xl text-white my-5 hover:bg-white hover:text-red-500 transition flex items-center justify-center rounded-xl hover:shadow-xl">
+          <Link className=" transition hover:scale-110" to={"/AdminDetails"}>
+            Admin Details
+          </Link>
+        </div>
       </div>
     </>
   );

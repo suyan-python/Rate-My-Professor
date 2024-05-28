@@ -5,7 +5,7 @@ const getAll = async (req, res) =>
     const data = await schema.find({});
     // select * from category;
     res.send({
-        status: 200,
+        status: 900,
         message: 'Data retrieved',
         data: data
     });
