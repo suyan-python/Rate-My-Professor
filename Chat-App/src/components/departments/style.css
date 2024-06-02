@@ -1,9 +1,0 @@
-.person1 {
-  .image-area {
-    img {
-      width: 70%;
-      aspect-ratio: 3/2;
-      object-fit: contain;
-    }
-  }
-}
