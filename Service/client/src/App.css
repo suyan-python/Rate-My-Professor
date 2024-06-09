@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  .image-area {
+    width: 30%;
+  }
+  .text-area {
+    padding: 12px;
+    background-color: red;
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
