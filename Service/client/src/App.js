@@ -34,7 +34,9 @@ function App() {
         <div className="text-area">
           <h1>File Sharing</h1>
           <p>Upload and share the download link</p>
-          <button onClick={() => onUploadClick()}>Upload</button>
+          <button className="upload" onClick={() => onUploadClick()}>
+            Upload
+          </button>
           <input
             type="file"
             ref={fileInputRef}

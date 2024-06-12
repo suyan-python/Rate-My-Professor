@@ -8,16 +8,44 @@
   height: 100vh;
   overflow: hidden;
   .image-area {
-    width: 30%;
+    width: 50%;
+    background-color: red;
   }
   .text-area {
     padding: 12px;
-    background-color: red;
-    width: 600px;
-    height: 400px;
+    width: 400px;
+    height: 600px;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 12px;
+    font-weight: 700;
+    border-radius: 18px;
+    justify-content: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.59);
+
+    .upload {
+      padding: 8px 18px;
+      cursor: pointer;
+      border: none;
+      font-size: 18px;
+      border-radius: 12px;
+      transition: 0.5s;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.607);
+      background-color: white;
+    }
+    .upload:hover {
+      transform: scale(1.1);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.607);
+      background-color: red;
+      color: white;
+    }
+    .qr-image {
+      gap: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }

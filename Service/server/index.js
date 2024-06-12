@@ -13,6 +13,8 @@ const PORT = 8000;
 
 dbConnection();
 
-app.listen(PORT, () => {
-  console.log(`Server is Running on PORT ${PORT}`);
+const server = app.listen(PORT, () => {
+  const ip = server.address();
+  console.log(ip);
+  console.log(ip + `Server is Running on PORT ${PORT}`);
 });
