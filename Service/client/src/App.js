@@ -1,5 +1,7 @@
 import "./App.css";
 import { useRef, useState, useEffect } from "react";
+import { QRCodeCanvas } from "qrcode.react";
+
 import { uploadFile } from "./services/api";
 
 function App() {
@@ -43,6 +45,10 @@ function App() {
           <a href={result} target="_black">
             {result}
           </a>
+          <div className="qr-image">
+            <h3>Scan To Download</h3>
+            <QRCodeCanvas value={result} />
+          </div>
         </div>
       </div>
     </>
