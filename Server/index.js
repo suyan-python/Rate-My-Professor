@@ -1,10 +1,19 @@
 require("dotenv").config();
+const cors = require("cors");
 const express = require("express");
 const authRoute = require("./router/auth-router");
 const contactRoute = require("./router/contact-router");
 const app = express();
 const connectDb = require("./utils/db");
 const errorMiddleware = require("./middlewares/error-middleware");
+
+const corsOptions = {
+  origin: "http://localhost:3000",
+  methods: "GET, POST, PATCH, PUT, DELETE, HEAD",
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
 
 app.use(express.json());
 
