@@ -59,4 +59,14 @@ const login = async (req, res) => {
   }
 };
 
-module.exports = { home, register, login };
+const user = async (req, res) => {
+  try {
+    // const userData = req.user;
+    // return res.status(200).json({ msg: userData });
+    res.status(200).json({ msg: "User" });
+  } catch (error) {
+    console.log("UserRoute Error", error);
+  }
+};
+
+module.exports = { home, register, login, user };
